@@ -1,0 +1,26 @@
+@use '../base';
+
+.btn {
+    background: linear-gradient(base.$color-secondary, base.$color-primary);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(lighten(base.$color-secondary, 5%), lighten(base.$color-primary, 5%));
+        box-shadow: 0 15px 15px 1px darken(base.$gris-f, 5%);
+    }
+}
+
+.desc__btn {
+    padding: 15px;
+}
+
+.menu__btn {
+    margin: 32px 0px 50px 0px;
+    width: 175px;
+    height: 48px;
+    align-self: center;
+}

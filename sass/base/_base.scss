@@ -1,0 +1,10 @@
+@use 'index.scss';
+
+.shadow {
+    box-shadow: 0 15px 15px 1px index.$gris-f;
+}
+
+
+.white {
+    color: white;
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-weights: (
+    "light": 100,
+    "regular": 300,
+    "medium": 500
+);
+$font-sizes: (
+    "extraLarge": 32px,
+    "extra": 24px,
+    "large": 20px,
+    "medium": 18px,
+    "regular": 16px
+);
+
+.desc {
+    &__subtitle {
+        font-weight: map-get($font-weights, "light");
+    }
+}
+
+.fonction {
+    &__title {
+        font-size: map-get($font-sizes, "extraLarge");
+    }
+}
+
+.diner {
+    &__title {
+        font-size: map-get($font-sizes, "extraLarge");
+    }
+}
+
+.diner .card {
+    &__title {
+        font-size: map-get($font-sizes, "large");
+    }
+
+    &__subtitle {
+        font-weight: map-get($font-weights, "light");
+    }
+}
+
+.menu {
+
+    &__n-title {
+        font-size: map-get($font-sizes, "extra");
+        font-family: 'Shrikhand', sans-serif;
+    }
+
+    h3 {
+        font-weight: map-get($font-weights, "regular");
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: map-get($font-sizes, "medium");
+        font-weight: map-get($font-weights, "medium");
+        line-height: 1;
+    }
+
+    &__subtitle {
+        font-weight: map-get($font-weights, "light");
+    }
+
+    &__price {
+        font-weight: map-get($font-weights, "medium");
+    }
+}
+
+.footer {
+    &__title {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: map-get($font-sizes, "regular");
+        font-weight: map-get($font-weights, "light");
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+li,
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

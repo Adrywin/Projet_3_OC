@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    &__logo {
+        width: 200px;
+        height: auto;
+    }
+
+    &__arrow {
+        align-self: center;
+        position: absolute;
+        left: 16px;
+    }
+}

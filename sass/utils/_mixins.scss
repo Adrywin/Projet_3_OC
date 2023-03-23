@@ -1,0 +1,26 @@
+@use './variables' as v;
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get(v.$breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get(v.$breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin bg-lightgray {
+    background-color: v.$gris-l;
+}
+
+@mixin bg-darkgray {
+    background-color: v.$gris-f;
+}
+
+@mixin border-menu {
+    border-bottom: 3px solid v.$color-tertiary;
+    width: 45px;
+}
